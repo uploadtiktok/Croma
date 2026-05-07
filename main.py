@@ -29,11 +29,84 @@ HISTORY_JSON = "used_verses_history.json"
 RSS_FILE = "rss.xml"
 REPO = "uploadtiktok/Croma"
 BRANCH = "main"
-VIDEOS_PER_RUN = 3  # عدد المقاطع التي سيتم إنشاؤها في كل تشغيل
+VIDEOS_PER_RUN = 3
 # ====================================
 
-# ... (RECITERS, ALL_SURAH_NAMES, HASHTAGS كما هي)
+# ========== RECITERS LIST ==========
+RECITERS = [
+    {"id": "Yasser_Ad-Dussary_128kbps", "name": "ياسر الدوسري"},
+    {"id": "MaherAlMuaiqly128kbps", "name": "ماهر المعيقلي"},
+    {"id": "Abu_Bakr_Ash-Shaatree_128kbps", "name": "أبوبكر الشاطري"},
+    {"id": "Ibrahim_Akhdar_32kbps", "name": "ابراهيم الاخضر"},
+    {"id": "Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net", "name": "أحمد العجمي"},
+    {"id": "Ayman_Sowaid_64kbps", "name": "أيمن رشدي سويد"},
+    {"id": "Ghamadi_40kbps", "name": "سعد الغامدي"},
+    {"id": "Abdul_Basit_Murattal_192kbps", "name": "عبدالباسط عبدالصمد مرتل"},
+    {"id": "Abdul_Basit_Mujawwad_128kbps", "name": "عبدالباسط عبدالصمد مجود"},
+    {"id": "Abdurrahmaan_As-Sudais_192kbps", "name": "عبدالرحمن السديس"},
+    {"id": "Abdullah_Basfar_192kbps", "name": "عبدالله بصفر"},
+    {"id": "Abdullaah_3awwaad_Al-Juhaynee_128kbps", "name": "عبد الله عواد الجهني"},
+    {"id": "Ali_Jaber_64kbps", "name": "علي جابر"},
+    {"id": "Hudhaify_128kbps", "name": "علي الحذيفي"},
+    {"id": "Fares_Abbad_64kbps", "name": "فارس عباد"},
+    {"id": "khalefa_al_tunaiji_64kbps", "name": "خليفة الطنيجي"},
+    {"id": "Husary_128kbps_Mujawwad", "name": "محمود خليل الحصري مجود"},
+    {"id": "Husary_128kbps", "name": "محمود خليل الحصري مرتل"},
+    {"id": "Minshawy_Mujawwad_192kbps", "name": "محمد صديق المنشاوي مجود"},
+    {"id": "Minshawy_Murattal_128kbps", "name": "محمد صديق المنشاوي مرتل"},
+    {"id": "Mohammad_al_Tablaway_128kbps", "name": "محمد الطبلاوي"},
+    {"id": "Muhammad_Ayyoub_128kbps", "name": "محمد أيوب"},
+    {"id": "Muhammad_Jibreel_128kbps", "name": "محمد جبريل"},
+    {"id": "Alafasy_128kbps", "name": "مشاري العفاسي"},
+    {"id": "Nasser_Alqatami_128kbps", "name": "ناصر القطامي"},
+    {"id": "Hani_Rifai_192kbps", "name": "هاني الرفاعي"},
+]
 
+# ========== SURAH LIST ==========
+ALL_SURAH_NAMES = [
+    "1|الفاتحة|Al-Fatiha", "2|البقرة|Al-Baqarah", "3|آل عمران|Aal-Imran",
+    "4|النساء|An-Nisa", "5|المائدة|Al-Maidah", "6|الأنعام|Al-Anam",
+    "7|الأعراف|Al-Araf", "8|الأنفال|Al-Anfal", "9|التوبة|At-Tawbah",
+    "10|يونس|Yunus", "11|هود|Hud", "12|يوسف|Yusuf", "13|الرعد|Ar-Rad",
+    "14|إبراهيم|Ibrahim", "15|الحجر|Al-Hijr", "16|النحل|An-Nahl",
+    "17|الإسراء|Al-Isra", "18|الكهف|Al-Kahf", "19|مريم|Maryam",
+    "20|طه|Taha", "21|الأنبياء|Al-Anbiya", "22|الحج|Al-Hajj",
+    "23|المؤمنون|Al-Muminun", "24|النور|An-Nur", "25|الفرقان|Al-Furqan",
+    "26|الشعراء|Ash-Shuara", "27|النمل|An-Naml", "28|القصص|Al-Qasas",
+    "29|العنكبوت|Al-Ankabut", "30|الروم|Ar-Rum", "31|لقمان|Luqman",
+    "32|السجدة|As-Sajda", "33|الأحزاب|Al-Ahzab", "34|سبأ|Saba",
+    "35|فاطر|Fatir", "36|يس|Ya-Sin", "37|الصافات|As-Saffat",
+    "38|ص|Sad", "39|الزمر|Az-Zumar", "40|غافر|Ghafir",
+    "41|فصلت|Fussilat", "42|الشورى|Ash-Shura", "43|الزخرف|Az-Zukhruf",
+    "44|الدخان|Ad-Dukhan", "45|الجاثية|Al-Jathiya", "46|الأحقاف|Al-Ahqaf",
+    "47|محمد|Muhammad", "48|الفتح|Al-Fath", "49|الحجرات|Al-Hujurat",
+    "50|ق|Qaf", "51|الذاريات|Adh-Dhariyat", "52|الطور|At-Tur",
+    "53|النجم|An-Najm", "54|القمر|Al-Qamar", "55|الرحمن|Ar-Rahman",
+    "56|الواقعة|Al-Waqia", "57|الحديد|Al-Hadid", "58|المجادلة|Al-Mujadila",
+    "59|الحشر|Al-Hashr", "60|الممتحنة|Al-Mumtahina", "61|الصف|As-Saff",
+    "62|الجمعة|Al-Jumuah", "63|المنافقون|Al-Munafiqun", "64|التغابن|At-Taghabun",
+    "65|الطلاق|At-Talaq", "66|التحريم|At-Tahrim", "67|الملك|Al-Mulk",
+    "68|القلم|Al-Qalam", "69|الحاقة|Al-Haqqah", "70|المعارج|Al-Maarij",
+    "71|نوح|Nuh", "72|الجن|Al-Jinn", "73|المزمل|Al-Muzzammil",
+    "74|المدثر|Al-Muddathir", "75|القيامة|Al-Qiyamah", "76|الإنسان|Al-Insan",
+    "77|المرسلات|Al-Mursalat", "78|النبأ|An-Naba", "79|النازعات|An-Naziat",
+    "80|عبس|Abasa", "81|التكوير|At-Takwir", "82|الإنفطار|Al-Infitar",
+    "83|المطففين|Al-Mutaffifin", "84|الإنشقاق|Al-Inshiqaq", "85|البروج|Al-Buruj",
+    "86|الطارق|At-Tariq", "87|الأعلى|Al-Ala", "88|الغاشية|Al-Ghashiyah",
+    "89|الفجر|Al-Fajr", "90|البلد|Al-Balad", "91|الشمس|Ash-Shams",
+    "92|الليل|Al-Lail", "93|الضحى|Ad-Duha", "94|الشرح|Ash-Sharh",
+    "95|التين|At-Tin", "96|العلق|Al-Alaq", "97|القدر|Al-Qadr",
+    "98|البينة|Al-Bayyinah", "99|الزلزلة|Az-Zalzalah", "100|العاديات|Al-Adiyat",
+    "101|القارعة|Al-Qariah", "102|التكاثر|At-Takathur", "103|العصر|Al-Asr",
+    "104|الهمزة|Al-Humazah", "105|الفيل|Al-Fil", "106|قريش|Quraish",
+    "107|الماعون|Al-Maun", "108|الكوثر|Al-Kawthar", "109|الكافرون|Al-Kafirun",
+    "110|النصر|An-Nasr", "111|المسد|Al-Masad", "112|الإخلاص|Al-Ikhlas",
+    "113|الفلق|Al-Falaq", "114|الناس|An-Nas",
+]
+
+HASHTAGS = ["#كرومات", "#كرومات_قرآنية", "#كروما", "#كروما_قرآنية", "#قرآن", "#تلاوة", "#تدبر"]
+
+# ========== FUNCTIONS ==========
 def init_json_history():
     if not os.path.exists(HISTORY_JSON):
         with open(HISTORY_JSON, 'w', encoding='utf-8') as f:
@@ -255,7 +328,7 @@ def update_rss_file(videos_data):
         new_items.append({'title': title, 'link': video_url, 'pub_date': pub_date})
     
     # Combine (newest first)
-    all_items = new_items + current_items[:50]  # احتفظ بآخر 50 مقطع
+    all_items = new_items + current_items[:50]
     
     # Create RSS
     rss = ET.Element('rss', version='2.0')
@@ -375,7 +448,7 @@ def main():
         if result:
             successful_videos.append(result)
         
-        # انتظر بين المقاطع لتجنب الضغط على الخوادم
+        # انتظر بين المقاطع
         if i < VIDEOS_PER_RUN:
             print("\n⏳ Waiting 5 seconds before next video...")
             time.sleep(5)
