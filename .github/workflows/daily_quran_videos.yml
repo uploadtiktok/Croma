@@ -1,0 +1,36 @@
+name: Generate Daily Quran Videos
+
+on:
+  schedule:
+    # يعمل كل يوم في الساعة 12 صباحاً (منتصف الليل) بتوقيت UTC
+    # إذا كنت تريد بتوقيت مكة (UTC+3)، استخدم الساعة 21:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # يسمح بالتشغيل اليدوي من واجهة GitHub
+
+jobs:
+  generate-videos:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg imagemagick
+        pip install requests
+    
+    - name: Run Quran Video Creator (3 Videos)
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        python3 main.py
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add videos/ rss.xml used_verses_history.json
+        git diff --quiet && git diff --staged --quiet || git commit -m "📖 Daily Quran videos $(date +'%Y-%m-%d')"
+        git push
