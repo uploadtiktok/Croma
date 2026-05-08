@@ -2,30 +2,30 @@
 <rss version="2.0">
   <channel>
     <title>Quran Video Feed - 3 Videos Daily</title>
-    <description>Daily Quran recitation videos (3 videos per day) with black screen</description>
+    <description>Professional Quran recitation videos for chroma key</description>
     <link>https://github.com/uploadtiktok/Croma</link>
     <language>ar</language>
-    <lastBuildDate>Fri, 08 May 2026 02:52:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 10:36:30 +0000</lastBuildDate>
     <item>
-      <title>سورة الشعراء | الآيات 26-26 | علي جابر #كرومات #كرومات_قرآنية #كروما #كروما_قرآنية #قرآن #تلاوة #تدبر</title>
-      <link>https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s26_v26-26_20260508_025202_1.mp4</link>
-      <pubDate>Fri, 08 May 2026 02:52:41 +0000</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s26_v26-26_20260508_025202_1.mp4" type="video/mp4"/>
-      <guid isPermaLink="false">https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s26_v26-26_20260508_025202_1.mp4</guid>
+      <title>سورة يس | الآيات 1-7 | الحكمة الإلهية في رسالة القرآن الكريم وتأثيرها على المكذبين. | فارس عباد #كرومات #كرومات_قرآنية #كروما #كروما_قرآنية #قرآن #تلاوة #تدبر</title>
+      <link>https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s36_v1-7_20260508_103459_1.mp4</link>
+      <pubDate>Fri, 08 May 2026 10:36:30 +0000</pubDate>
+      <enclosure url="https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s36_v1-7_20260508_103459_1.mp4" type="video/mp4"/>
+      <guid isPermaLink="false">https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s36_v1-7_20260508_103459_1.mp4</guid>
     </item>
     <item>
-      <title>سورة الماعون | الآيات 4-7 | محمد صديق المنشاوي مجود #كرومات #كرومات_قرآنية #كروما #كروما_قرآنية #قرآن #تلاوة #تدبر</title>
-      <link>https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s107_v4-7_20260508_025225_2.mp4</link>
-      <pubDate>Fri, 08 May 2026 02:52:41 +0000</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s107_v4-7_20260508_025225_2.mp4" type="video/mp4"/>
-      <guid isPermaLink="false">https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s107_v4-7_20260508_025225_2.mp4</guid>
+      <title>سورة يس | الآيات 33-38 | آيات الله في الكون وعلامات الساعة | مشاري العفاسي #كرومات #كرومات_قرآنية #كروما #كروما_قرآنية #قرآن #تلاوة #تدبر</title>
+      <link>https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s36_v33-38_20260508_103516_2.mp4</link>
+      <pubDate>Fri, 08 May 2026 10:36:30 +0000</pubDate>
+      <enclosure url="https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s36_v33-38_20260508_103516_2.mp4" type="video/mp4"/>
+      <guid isPermaLink="false">https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s36_v33-38_20260508_103516_2.mp4</guid>
     </item>
     <item>
-      <title>سورة القيامة | الآيات 1-3 | ياسر الدوسري #كرومات #كرومات_قرآنية #كروما #كروما_قرآنية #قرآن #تلاوة #تدبر</title>
-      <link>https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s75_v1-3_20260508_025237_3.mp4</link>
-      <pubDate>Fri, 08 May 2026 02:52:41 +0000</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s75_v1-3_20260508_025237_3.mp4" type="video/mp4"/>
-      <guid isPermaLink="false">https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s75_v1-3_20260508_025237_3.mp4</guid>
+      <title>سورة الروم | الآيات 20-25 | براهين القدرة الإلهية في النفس والكون (سلسلة الآيات الست) | محمود خليل الحصري مرتل #كرومات #كرومات_قرآنية #كروما #كروما_قرآنية #قرآن #تلاوة #تدبر</title>
+      <link>https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s30_v20-25_20260508_103556_3.mp4</link>
+      <pubDate>Fri, 08 May 2026 10:36:30 +0000</pubDate>
+      <enclosure url="https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s30_v20-25_20260508_103556_3.mp4" type="video/mp4"/>
+      <guid isPermaLink="false">https://raw.githubusercontent.com/uploadtiktok/Croma/main/videos/quran_s30_v20-25_20260508_103556_3.mp4</guid>
     </item>
   </channel>
 </rss>
